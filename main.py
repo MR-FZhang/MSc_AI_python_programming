@@ -1,9 +1,10 @@
 # creating a working robot
-
+import random
+facing = ['N', 'S', 'E', 'W']
 name = input("Enter the name of your robot: ")
-row_coord = int(input("Enter the row coordinate of your robot: "))
-col_coord = int(input("Enter the column coordinate of your robot: "))
-direction = input("What is its initial direction [N|S|E|W]: ")
+row_coord = random.randint(0, 9) #int(input("Enter the row coordinate of your robot: "))
+col_coord = random.randint(0, 9) #int(input("Enter the column coordinate of your robot: "))
+direction = random.choice(facing) #input("What is its initial direction [N|S|E|W]: ")
 id = 1000
 
 def correct_bounds(row, col):
